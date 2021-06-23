@@ -6,13 +6,16 @@
     <OutputType>Library</OutputType>
     <RootNamespace />
     <AssemblyName>HiraokaHyperTools.itextsharp</AssemblyName>
-    <PackageVersion>0.1.14</PackageVersion>
 
     <PackageId>HiraokaHyperTools.iTextSharp-LGPL</PackageId>
+    <Version>0.1.15</Version>
     <Authors>kenjiuno</Authors>
-    <RepositoryUrl>https://github.com/HiraokaHyperTools/iTextSharp-LGPL</RepositoryUrl>
+    <Description>A free PDF library ported from Java iText.</Description>
+    <PackageLicenseExpression>LGPL-2.1-or-later</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/HiraokaHyperTools/iTextSharp-LGPL</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HiraokaHyperTools/iTextSharp-LGPL.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageDescription>A free PDF library ported from Java iText.</PackageDescription>
     <Copyright>Copyright (C) 1999-2009 by Bruno Lowagie and Paulo Soares, 2021 HIRAOKA HYPERS TOOLS, Inc.. All Rights Reserved.</Copyright>
     <PackageTags>iTextSharp-LGPL</PackageTags>
 
