@@ -266,7 +266,7 @@ namespace iTextSharp.text.pdf {
             // if we hit here, the file is either corrupt (stream ended unexpectedly),
             // or the last token ended exactly at the end of a stream.  This last
             // case can occur inside an Object Stream.
-            if (type != TK_OTHER || !stringValue.Equals("R"))
+            if (level >= 2 && (type != TK_OTHER || !stringValue.Equals("R")))
             {
                 file.Seek(ptr);
                 type = TK_NUMBER;
