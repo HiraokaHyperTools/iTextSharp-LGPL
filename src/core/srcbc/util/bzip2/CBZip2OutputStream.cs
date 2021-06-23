@@ -415,10 +415,6 @@ namespace Org.BouncyCastle.Apache.Bzip2
 
         bool closed = false;
 
-        protected void Finalize() {
-            Close();
-        }
-
         public override void Close() {
             if (closed) {
                 return;

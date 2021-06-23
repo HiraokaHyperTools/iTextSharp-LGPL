@@ -80,6 +80,8 @@ namespace iTextSharp.text.rtf.parser.destinations {
         public const int ORIGINAL_TIFF = 5;
         public const int ORIGINAL_PS = 7;
 
+        public int PictureType => pictureType;
+
         // emfblip - EMF (nhanced metafile) - NOT HANDLED
         // pngblip int ORIGINAL_PNG = 2;
         // jpegblip Image.ORIGINAL_JPEG = 1; ORIGINAL_JPEG2000 = 8;
@@ -88,14 +90,14 @@ namespace iTextSharp.text.rtf.parser.destinations {
         // nonshpict - Destination - SKIP THIS
         // macpict - Mac QuickDraw- NOT HANDLED
         // pmmetafileN - OS/2 Metafile - NOT HANDLED
-            // N * Meaning
-            // 0x0004 PU_ARBITRARY
-            // 0x0008 PU_PELS
-            // 0x000C PU_LOMETRIC
-            // 0x0010 PU_HIMETRIC
-            // 0x0014 PU_LOENGLISH
-            // 0x0018 PU_HIENGLISH
-            // 0x001C PU_TWIPS
+        // N * Meaning
+        // 0x0004 PU_ARBITRARY
+        // 0x0008 PU_PELS
+        // 0x000C PU_LOMETRIC
+        // 0x0010 PU_HIMETRIC
+        // 0x0014 PU_LOENGLISH
+        // 0x0018 PU_HIENGLISH
+        // 0x001C PU_TWIPS
         //private int pmmetafile = 0;
         // wmetafileN Image.RIGINAL_WMF = 6;
         // N * Type
@@ -109,7 +111,7 @@ namespace iTextSharp.text.rtf.parser.destinations {
         // 8 = MM_ANISOTROPIC
         // dibitmapN - DIB - Convert to BMP?
         // wbitmapN Image.ORIGINAL_BMP = 4;
-        
+
         /* bitapinfo */
         // wbmbitspixelN - number of bits per pixel - 1 monochrome, 4 16 color, 8 256 color, 24 RGB - Default 1
         //private int bitsPerPixel = 1;
@@ -117,9 +119,9 @@ namespace iTextSharp.text.rtf.parser.destinations {
         //private int planes = 1;
         // wbmwidthbytesN - number of bytes in each raster line
         //private int widthBytes = 0;
-        
-        
-        
+
+
+
         /* pictsize */
         // picwN Ext field if the picture is a Windows metafile; picture width in pixels if the picture is a bitmap or
         // from quickdraw
@@ -178,7 +180,6 @@ namespace iTextSharp.text.rtf.parser.destinations {
         private MemoryStream dataOS = null;
         
         public RtfDestinationShppict() : base(null) {
-            this.pictureType = pictureType; //get rid of a warning
         }
 
         /**
