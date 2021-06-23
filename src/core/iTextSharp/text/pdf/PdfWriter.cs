@@ -2251,8 +2251,9 @@ namespace iTextSharp.text.pdf {
 
         protected PdfReaderInstance currentPdfReaderInstance;
 
-        protected internal virtual int GetNewObjectNumber(PdfReader reader, int number, int generation) {
-            return currentPdfReaderInstance.GetNewObjectNumber(number, generation);
+        protected internal virtual int GetNewObjectNumber(PdfReader reader, int number, int generation)
+        {
+            return (currentPdfReaderInstance ?? new PdfReaderInstance(reader, this)).GetNewObjectNumber(number, generation);
         }
 
         internal virtual RandomAccessFileOrArray GetReaderFile(PdfReader reader) {

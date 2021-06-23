@@ -2962,5 +2962,20 @@ namespace iTextSharp.text.pdf {
                 throw new IllegalPdfSyntaxException("Unbalanced save/restore state operators." );
             }
         }
+
+        public virtual void AddFormXObj(PdfStream template, PdfName name, float a, float b, float c, float d, float e, float f)
+        {
+            CheckWriter();
+            PageResources prs = PageResources;
+            name = prs.AddXObject(name, writer.AddToBody(template).IndirectReference);
+            content.Append("q ");
+            content.Append(a).Append(' ');
+            content.Append(b).Append(' ');
+            content.Append(c).Append(' ');
+            content.Append(d).Append(' ');
+            content.Append(e).Append(' ');
+            content.Append(f).Append(" cm ");
+            content.Append(name.GetBytes()).Append(" Do Q").Append_i(separator);
+        }
     }
 }
