@@ -56,30 +56,30 @@ namespace iTextSharp.text.pdf
         {
             internal int num;
             internal int gen;
-            internal RefKey(int num, int gen)
-            {
-                this.num = num;
-                this.gen = gen;
-            }
-            internal RefKey(PdfIndirectReference refi)
-            {
-                num = refi.Number;
-                gen = refi.Generation;
-            }
+            internal PdfReader reader;
+
             internal RefKey(PRIndirectReference refi)
             {
                 num = refi.Number;
                 gen = refi.Generation;
+                reader = refi.Reader;
             }
             public override int GetHashCode()
             {
-                return (gen << 16) + num;
+                int hash = 21701;
+                hash = hash * 98207 + (reader?.GetHashCode() ?? 0);
+                hash = hash * 98207 + (gen << 16);
+                hash = hash * 98207 + (num);
+                return hash;
             }
             public override bool Equals(Object o)
             {
                 if (!(o is RefKey)) return false;
                 RefKey other = (RefKey)o;
-                return this.gen == other.gen && this.num == other.num;
+                return true
+                    && this.gen == other.gen
+                    && this.num == other.num
+                    && ReferenceEquals(this.reader, other.reader);
             }
             public override String ToString()
             {

@@ -8,7 +8,7 @@
     <AssemblyName>HiraokaHyperTools.itextsharp</AssemblyName>
 
     <PackageId>HiraokaHyperTools.iTextSharp-LGPL</PackageId>
-    <Version>0.1.15</Version>
+    <Version>0.1.16</Version>
     <Authors>kenjiuno</Authors>
     <Description>A free PDF library ported from Java iText.</Description>
     <PackageLicenseExpression>LGPL-2.1-or-later</PackageLicenseExpression>
