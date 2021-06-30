@@ -1,0 +1,4 @@
+var class_org_1_1_bouncy_castle_1_1_pkix_1_1_pkix_name_constraint_validator_exception =
+[
+    [ "PkixNameConstraintValidatorException", "class_org_1_1_bouncy_castle_1_1_pkix_1_1_pkix_name_constraint_validator_exception.html#a9f37b3d0efcdbe07e98011d400d57983", null ]
+];

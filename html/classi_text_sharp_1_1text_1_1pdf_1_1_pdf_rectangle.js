@@ -1,0 +1,25 @@
+var classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle =
+[
+    [ "PdfRectangle", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#ad17bd5ed71b62c66fddb4164d94dd2ad", null ],
+    [ "PdfRectangle", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a4d1250d1ad2261c35c444d92ad58d198", null ],
+    [ "PdfRectangle", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#aec23684ec5f6b8d6423a83d7dc6d524a", null ],
+    [ "PdfRectangle", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#ad86ac2cfa215bc0a1a40c1c597857235", null ],
+    [ "PdfRectangle", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#af8437b51b17b35159e056c28e9a863c6", null ],
+    [ "PdfRectangle", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a3cd886ae23cb74f959aa25b86b4f7dcc", null ],
+    [ "Add", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a21c22aa2da8a3d48e9ad624892ab2945", null ],
+    [ "Add", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a89126bb4be07aba95dcea173ffb506a4", null ],
+    [ "Add", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a1198a2344c74e81278a4cdf1c963c418", null ],
+    [ "AddFirst", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a76f0290cd2221ced6ef301cf24b70eac", null ],
+    [ "GetBottom", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a1dc568946cb18062a97ea9afc146ee6d", null ],
+    [ "GetLeft", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#abef91a627dfd8b556194cfb424513a80", null ],
+    [ "GetRight", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a167f696976ecd6b3653008405c721fd3", null ],
+    [ "GetTop", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a254b507df853a694735706e0045fda50", null ],
+    [ "Bottom", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a2fa6d9bf963900e3564e2f9b770cce98", null ],
+    [ "Height", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#ac10135febc9ff8ff0342fa7350114ce8", null ],
+    [ "Left", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#af22271cc6e603d61c3af206633d3ab1c", null ],
+    [ "Rectangle", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a96cd4443725ea277b696c688cc4e2f56", null ],
+    [ "Right", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#adeb35048a021b0df190fbd847b6c73ce", null ],
+    [ "Rotate", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#afec12c0fa4880a2ec88ce54f488c9e5e", null ],
+    [ "Top", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a32437edba4f3197f3a5b8689cecd9b14", null ],
+    [ "Width", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html#a2ee3519017e02cb5d8571b7fb08928b8", null ]
+];

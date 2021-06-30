@@ -1,0 +1,26 @@
+var classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object =
+[
+    [ "PdfObject", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#adade355908c3d7dcfcefbc92f52abbf8", null ],
+    [ "PdfObject", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a4bf36fa01411e40de7a1ce2ecee60daa", null ],
+    [ "PdfObject", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a1b890273b75c095def73582319bac248", null ],
+    [ "CanBeInObjStm", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#aafcbf489d5b31ef7cb4f5ccf1651f5fd", null ],
+    [ "GetBytes", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a9866e52a1844b352b6bd3e1952fcdc5d", null ],
+    [ "IsArray", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a6dc2f945b1ac528c6c79529710e2cc36", null ],
+    [ "IsBoolean", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a20eb18b9f20e75425e2bc6932b071ffc", null ],
+    [ "IsDictionary", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#ae1a4cbe0406496e3c64140418b50805a", null ],
+    [ "IsIndirect", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a3d78f87bf5204e8b00b872bc676a34d2", null ],
+    [ "IsName", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a7799af4fe544770af3076c86fb58577a", null ],
+    [ "IsNull", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#aba4c2be2dbacea51387b5c777d992c2c", null ],
+    [ "IsNumber", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#acb1b7ca7aca7b4eef8132bb1b092dda2", null ],
+    [ "IsStream", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a9e817fdc4726249a6ca6784787b63133", null ],
+    [ "IsString", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a5efa5001c2b5aca674eb501ed4f6d49a", null ],
+    [ "ToPdf", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a5d16f45f972a115049b849d269825cfb", null ],
+    [ "ToString", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#ab0394923feaac89f6c8084d38c8600fd", null ],
+    [ "bytes", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a87ab51fb1fb1eefbd0a34039609169ba", null ],
+    [ "indRef", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#ac9aafe553b6e3d4b2bd4889548a7fd12", null ],
+    [ "type", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#a0d02a21a2a7a1f82663ab932bebfec61", null ],
+    [ "Content", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#aeb8ee6f9740cbda3a1c8ae84098f75f0", null ],
+    [ "IndRef", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#aff2f6a3cd021ee5224edc4cfc1fdab1b", null ],
+    [ "Length", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#ab27d7982a5904401b913bc0af14a5f05", null ],
+    [ "Type", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html#ac6f9b9664c035ce9f591bb0d7249882b", null ]
+];

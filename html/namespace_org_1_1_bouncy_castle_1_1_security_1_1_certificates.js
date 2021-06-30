@@ -1,0 +1,9 @@
+var namespace_org_1_1_bouncy_castle_1_1_security_1_1_certificates =
+[
+    [ "CertificateEncodingException", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_encoding_exception.html", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_encoding_exception" ],
+    [ "CertificateException", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_exception.html", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_exception" ],
+    [ "CertificateExpiredException", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_expired_exception.html", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_expired_exception" ],
+    [ "CertificateNotYetValidException", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_not_yet_valid_exception.html", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_not_yet_valid_exception" ],
+    [ "CertificateParsingException", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_parsing_exception.html", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_parsing_exception" ],
+    [ "CrlException", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_crl_exception.html", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_crl_exception" ]
+];

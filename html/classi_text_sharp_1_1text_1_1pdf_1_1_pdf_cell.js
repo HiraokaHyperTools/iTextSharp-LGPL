@@ -1,0 +1,25 @@
+var classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell =
+[
+    [ "PdfCell", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#ac8f192742ecb79c849ccba050133c52a", null ],
+    [ "GetImages", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a99dde9e6758568c8aca00346efd5625c", null ],
+    [ "GetLines", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a3678999e70c8cc86b26b62fa13df86cb", null ],
+    [ "ProcessActions", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#abdedebce1751f80d7b92b20bea78fab5", null ],
+    [ "Rectangle", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#abc9cfde95388c01d1a2c9ab4bbf20886", null ],
+    [ "Bottom", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a5d33365f314d75253a0bf1868fc8aae9", null ],
+    [ "Cellpadding", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#af1bd3ad9e201c867f29a5ff9dd3c0672", null ],
+    [ "Cellspacing", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a6930b19a85b3f864e9088b64e4503e18", null ],
+    [ "FirstLineRealHeight", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a864a7832ff535d35101cb6efbb187080", null ],
+    [ "GroupNumber", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#aa332de77ad1f73d473b67da076de900d", null ],
+    [ "Header", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a30941aa183badd6ac3028063186ef51d", null ],
+    [ "Leading", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#acafae52a558089c5b59e9affcc22bc19", null ],
+    [ "Left", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#aba28eb58d58131174c1bb65eeb4990ac", null ],
+    [ "RemainingHeight", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a4149af65109805d7e2fd42b76d816b36", null ],
+    [ "Right", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a56c7f6e0748ec14dd31a4d13592dd01a", null ],
+    [ "Rownumber", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a6630dbe5489e316fdfb9435ce35002e2", null ],
+    [ "Rowspan", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a62acb231cafd1ba2e92412f4758889a8", null ],
+    [ "Size", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a16628331cf9cbfce154e0b51a68e266b", null ],
+    [ "Top", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a0d36af4417d23e28ae2c91836ebf7af1", null ],
+    [ "UseAscender", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#aad83fb40708c63e767b0c7c8ce8bedde", null ],
+    [ "UseBorderPadding", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#a76ec6da6c074fcd1935c54a1b121d9e9", null ],
+    [ "UseDescender", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_cell.html#ace048c8b2a04305371413762931e9161", null ]
+];

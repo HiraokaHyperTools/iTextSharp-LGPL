@@ -1,0 +1,6 @@
+var class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_not_yet_valid_exception =
+[
+    [ "CertificateNotYetValidException", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_not_yet_valid_exception.html#a91fbc8bc99059ffeb1f4a2796f226f26", null ],
+    [ "CertificateNotYetValidException", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_not_yet_valid_exception.html#a5e42eaa4a9bac941858b0ceb073d3956", null ],
+    [ "CertificateNotYetValidException", "class_org_1_1_bouncy_castle_1_1_security_1_1_certificates_1_1_certificate_not_yet_valid_exception.html#a6dcfd723dc2d1a71847fee052fd0f803", null ]
+];
