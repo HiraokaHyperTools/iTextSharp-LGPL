@@ -1,3 +1,3 @@
-## HiraokaHyperTools.iTextSharp-LGPL
+TOC
 
 - [Documentation](html/)
