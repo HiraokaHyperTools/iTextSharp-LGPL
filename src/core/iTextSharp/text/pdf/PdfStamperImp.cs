@@ -200,7 +200,7 @@ namespace iTextSharp.text.pdf {
             if (iInfo != null)
                 skipInfo = iInfo.Number;
             if (oldInfo != null && oldInfo.Get(PdfName.PRODUCER) != null)
-                producer = oldInfo.GetAsString(PdfName.PRODUCER).ToString();
+                producer = oldInfo.GetAsString(PdfName.PRODUCER).ToUnicodeString();
             if (producer == null) {
                 producer = Document.Version;
             }
