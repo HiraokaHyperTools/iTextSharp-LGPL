@@ -290,6 +290,9 @@ namespace iTextSharp.text.pdf
             return BarcodeSize;
         }
 
+#if NET5_0_OR_GREATER
+        [System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif
         public override System.Drawing.Image CreateDrawingImage(System.Drawing.Color foreground, System.Drawing.Color background) {
             String fullCode = code;
             if (generateChecksum && checksumText)

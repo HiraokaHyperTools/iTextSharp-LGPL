@@ -167,8 +167,8 @@ namespace iTextSharp.text.xml {
         public TagMap(String tagfile) {
             try {
                 Init(tagfile);
-            } catch (Exception e) {
-                throw e;
+            } catch (Exception) {
+                throw;
             }
         }
    
@@ -179,8 +179,8 @@ namespace iTextSharp.text.xml {
         public TagMap(XmlDocument xTagfile) {
             try {
                 Init(xTagfile);
-            } catch (Exception e) {
-                throw e;
+            } catch (Exception) {
+                throw;
             }
         }
 
@@ -193,8 +193,8 @@ namespace iTextSharp.text.xml {
                 AttributeHandler a = new AttributeHandler(this);
                 a.Parse(xTagfile);
             }
-            catch (Exception e) {
-                throw e;
+            catch (Exception) {
+                throw;
             }
         }
 
@@ -207,8 +207,8 @@ namespace iTextSharp.text.xml {
                 AttributeHandler a = new AttributeHandler(this);
                 a.Parse(tagfile);
             }
-            catch (Exception e) {
-                throw e;
+            catch (Exception) {
+                throw;
             }
         }
     }

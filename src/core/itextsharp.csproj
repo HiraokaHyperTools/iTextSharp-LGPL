@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net40</TargetFrameworks>
+    <TargetFrameworks>net40;netstandard2.0;net6.0</TargetFrameworks>
 
     <OutputType>Library</OutputType>
     <RootNamespace />
     <AssemblyName>HiraokaHyperTools.itextsharp</AssemblyName>
 
     <PackageId>HiraokaHyperTools.iTextSharp-LGPL</PackageId>
-    <Version>0.1.19</Version>
+    <Version>0.2.4</Version>
     <Authors>kenjiuno</Authors>
     <Description>A free PDF library ported from Java iText.</Description>
     <PackageLicenseExpression>LGPL-2.1-or-later</PackageLicenseExpression>
@@ -40,5 +40,10 @@
     <EmbeddedResource Include="iTextSharp\text\pdf\fonts\Times-Roman.afm" />
     <EmbeddedResource Include="iTextSharp\text\pdf\fonts\ZapfDingbats.afm" />
     <None Include="itextsharp.snk" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' != 'net'">
+    <!-- Properties for .NET Cores -->
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>
 </Project>

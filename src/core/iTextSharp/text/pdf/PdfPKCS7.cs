@@ -19,6 +19,7 @@ using Org.BouncyCastle.Ocsp;
 using Org.BouncyCastle.Tsp;
 using Org.BouncyCastle.Crypto.Digests;
 using Org.BouncyCastle.Utilities;
+using System.util;
 
 /*
  * Copyright 2004 by Paulo Soares.
@@ -580,7 +581,7 @@ namespace iTextSharp.text.pdf {
             if (timeStampToken == null)
                 return false;
             MessageImprint imprint = timeStampToken.TimeStampInfo.TstInfo.MessageImprint;
-            byte[] md = new System.Security.Cryptography.SHA1CryptoServiceProvider().ComputeHash(digest);
+            byte[] md = UseCryptography.SHA1().ComputeHash(digest);
             byte[] imphashed = imprint.GetHashedMessage();
             bool res = Arrays.AreEqual(md, imphashed);
             return res;
@@ -1128,7 +1129,7 @@ namespace iTextSharp.text.pdf {
             // Added by Martin Brunecky, 07/12/2007 folowing Aiken Sam, 2006-11-15
             // Sam found Adobe expects time-stamped SHA1-1 of the encrypted digest
             if (tsaClient != null) {
-                byte[] tsImprint = new System.Security.Cryptography.SHA1CryptoServiceProvider().ComputeHash(digest);
+                byte[] tsImprint = UseCryptography.SHA1().ComputeHash(digest);
                 byte[] tsToken = tsaClient.GetTimeStampToken(this, tsImprint);
                 if (tsToken != null) {
                     Asn1EncodableVector unauthAttributes = BuildUnauthenticatedAttributes(tsToken);

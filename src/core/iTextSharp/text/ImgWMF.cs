@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 using System.Net;
-
+using System.util;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.codec.wmf;
 
@@ -112,8 +112,7 @@ namespace iTextSharp.text {
             try {
                 string errorID;
                 if (rawData == null){
-                    WebRequest w = WebRequest.Create(url);
-                    istr = w.GetResponse().GetResponseStream();
+                    istr = UrlDownload.DownloadFrom(url);
                     errorID = url.ToString();
                 }
                 else{
@@ -157,8 +156,7 @@ namespace iTextSharp.text {
             Stream istr = null;
             try {
                 if (rawData == null){
-                    WebRequest w = WebRequest.Create(url);
-                    istr = w.GetResponse().GetResponseStream();
+                    istr = UrlDownload.DownloadFrom(url);
                 }
                 else{
                     istr = new MemoryStream(rawData);

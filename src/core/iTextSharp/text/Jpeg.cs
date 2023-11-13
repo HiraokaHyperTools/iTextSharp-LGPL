@@ -192,8 +192,7 @@ namespace iTextSharp.text {
             try {
                 string errorID;
                 if (rawData == null){
-                    WebRequest w = WebRequest.Create(url);
-                    istr = w.GetResponse().GetResponseStream();
+                    istr = UrlDownload.DownloadFrom(url);
                     errorID = url.ToString();
                 }
                 else{

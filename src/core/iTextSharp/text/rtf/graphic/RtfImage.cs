@@ -8,6 +8,7 @@ using iTextSharp.text.rtf.document.output;
 using iTextSharp.text.rtf.text;
 using iTextSharp.text.rtf.style;
 using iTextSharp.text.pdf.codec.wmf;
+using System.util;
 /*
  * $Id: RtfImage.cs,v 1.11 2008/05/16 19:30:59 psoares33 Exp $
  * 
@@ -194,7 +195,7 @@ namespace iTextSharp.text.rtf.graphic {
                 } else {                
                     byte[] iod = image.OriginalData;
                     if (iod == null) {
-                        Stream imageIn = WebRequest.Create(image.Url).GetResponse().GetResponseStream();
+                        Stream imageIn = UrlDownload.DownloadFrom(image.Url);
                         if (imageType == Image.ORIGINAL_WMF) { //remove the placeable header first
                             for (int k = 0; k < WMF_PLACEABLE_HEADER_SIZE; k++) {
                                 if (imageIn.ReadByte() < 0) throw (new IOException("while removing wmf placeable header"));

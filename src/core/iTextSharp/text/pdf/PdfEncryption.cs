@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 using iTextSharp.text.pdf.crypto;
 using Org.BouncyCastle.X509;
+using System.util;
 
 /*
  * $Id: PdfEncryption.cs,v 1.13 2007/06/14 20:01:48 psoares33 Exp $
@@ -86,7 +87,7 @@ public class PdfEncryption {
     /** Work area to prepare the object/generation bytes */
     internal byte[] extra = new byte[5];
     /** The message digest algorithm MD5 */
-    internal MD5 md5;
+    internal HashAlgorithm md5;
     /** The encryption key for the owner */
     internal byte[] ownerKey = new byte[32];
     /** The encryption key for the user */
@@ -110,7 +111,7 @@ public class PdfEncryption {
     private int cryptoMode;
     
     public PdfEncryption() {
-        md5 = new MD5CryptoServiceProvider();
+        md5 = UseCryptography.MD5();
         publicKeyHandler = new PdfPublicKeySecurityHandler();
     }
 
@@ -303,7 +304,7 @@ public class PdfEncryption {
     }
 
     public static byte[] CreateDocumentId() {
-        MD5 md5 = new MD5CryptoServiceProvider();
+        var md5 = UseCryptography.MD5();
         long time = DateTime.Now.Ticks + Environment.TickCount;
         long mem = GC.GetTotalMemory(false);
         String s = time + "+" + mem + "+" + (seq++);
@@ -420,7 +421,7 @@ public class PdfEncryption {
                 }
             }
             
-            SHA1 sh = new SHA1CryptoServiceProvider();
+            var sh = UseCryptography.SHA1();
             byte[] encodedRecipient = null;
             byte[] seed = publicKeyHandler.GetSeed();
             sh.TransformBlock(seed, 0, seed.Length, seed, 0);

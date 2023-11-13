@@ -347,8 +347,7 @@ namespace iTextSharp.text {
         public static Image GetInstance(Uri url) {
             Stream istr = null;
             try {
-                WebRequest w = WebRequest.Create(url);
-                istr = w.GetResponse().GetResponseStream();
+                istr = UrlDownload.DownloadFrom(url);
                 int c1 = istr.ReadByte();
                 int c2 = istr.ReadByte();
                 int c3 = istr.ReadByte();
@@ -509,6 +508,9 @@ namespace iTextSharp.text {
         /// <param name="image"></param>
         /// <param name="?"></param>
         /// <returns></returns>
+#if NET5_0_OR_GREATER
+        [System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif
         public static Image GetInstance(System.Drawing.Image image, System.Drawing.Imaging.ImageFormat format) {
             MemoryStream ms = new MemoryStream();
             image.Save(ms, format);
@@ -525,6 +527,9 @@ namespace iTextSharp.text {
         /// </param>
         /// <param name="forceBW">if true the image is treated as black and white</param>
         /// <returns>an object of type ImgRaw</returns>
+#if NET5_0_OR_GREATER
+        [System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif
         public static Image GetInstance(System.Drawing.Image image, Color color, bool forceBW) {
             System.Drawing.Bitmap bm = (System.Drawing.Bitmap)image;
             int w = bm.Width;
@@ -681,6 +686,9 @@ namespace iTextSharp.text {
         /// pixels are replaced by this color
         /// </param>
         /// <returns>an object of type ImgRaw</returns>
+#if NET5_0_OR_GREATER
+        [System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif
         public static Image GetInstance(System.Drawing.Image image, Color color) {
             return Image.GetInstance(image, color, false);
         }

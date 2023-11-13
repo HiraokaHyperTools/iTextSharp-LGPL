@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using iTextSharp.text;
 using System.Collections;
+using System.util;
 
 /*
  * $Id: MetaDo.cs,v 1.4 2008/05/13 11:25:36 psoares33 Exp $
@@ -680,7 +681,7 @@ namespace iTextSharp.text.pdf.codec.wmf
         Stream imgIn;
         byte[] data = null;
         if (image.OriginalData == null) {
-            imgIn = WebRequest.Create(image.Url).GetResponse().GetResponseStream();
+            imgIn = UrlDownload.DownloadFrom(image.Url);
             MemoryStream outp = new MemoryStream();
             int b = 0;
             while ((b = imgIn.ReadByte()) != -1)

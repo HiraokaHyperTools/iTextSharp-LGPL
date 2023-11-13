@@ -303,7 +303,7 @@ namespace Org.BouncyCastle.Pkcs
 			{
 				sig = SignerUtilities.GetSigner(GetSignatureName(sigAlgId));
 			}
-			catch (Exception e)
+			catch (Exception)
 			{
 				// try an alternate
 				string alt = (string) oids[sigAlgId.ObjectID];
@@ -314,7 +314,7 @@ namespace Org.BouncyCastle.Pkcs
 				}
 				else
 				{
-					throw e;
+					throw;
 				}
 			}
 

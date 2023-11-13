@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Text;
 using System.Net;
+using System.util;
 /*
  * $Id: RandomAccessFileOrArray.cs,v 1.9 2008/05/13 11:25:23 psoares33 Exp $
  * 
@@ -76,7 +77,7 @@ namespace iTextSharp.text.pdf {
         public RandomAccessFileOrArray(String filename, bool forceRead) {
             if (!File.Exists(filename)) {
                 if (filename.StartsWith("file:/") || filename.StartsWith("http://") || filename.StartsWith("https://")) {
-                    Stream isp = WebRequest.Create(new Uri(filename)).GetResponse().GetResponseStream();
+                    Stream isp = UrlDownload.DownloadFrom(new Uri(filename));
                     try {
                         this.arrayIn = InputStreamToArray(isp);
                         return;
@@ -114,7 +115,7 @@ namespace iTextSharp.text.pdf {
         }
 
         public RandomAccessFileOrArray(Uri url) {
-            Stream isp = WebRequest.Create(url).GetResponse().GetResponseStream();
+            Stream isp = UrlDownload.DownloadFrom(url);
             try {
                 this.arrayIn = InputStreamToArray(isp);
             }

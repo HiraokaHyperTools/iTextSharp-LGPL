@@ -4,6 +4,7 @@ using System.IO;
 using System.Collections;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using System.util;
 /*
  * Copyright 2003 by Paulo Soares.
  *
@@ -111,7 +112,7 @@ namespace iTextSharp.text.pdf.codec {
             fromUrl = url;
             Stream isp = null;
             try {
-                isp = WebRequest.Create(url).GetResponse().GetResponseStream();
+                isp = UrlDownload.DownloadFrom(url);
                 Process(isp);
             }
             finally {

@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Net;
+using System.util;
 using iTextSharp.text.pdf.collection;
 /*
  * Copyright 2003 Paulo Soares
@@ -177,8 +178,7 @@ namespace iTextSharp.text.pdf {
                     }
                     else {
                         if (filePath.StartsWith("file:/") || filePath.StartsWith("http://") || filePath.StartsWith("https://")) {
-                            WebRequest w = WebRequest.Create(filePath);
-                            inp = w.GetResponse().GetResponseStream();
+                            inp = UrlDownload.DownloadFrom(new Uri(filePath));
                         }
                         else {
                             inp = BaseFont.GetResourceStream(filePath);

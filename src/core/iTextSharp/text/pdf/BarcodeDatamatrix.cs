@@ -760,6 +760,9 @@ namespace iTextSharp.text.pdf {
         * @param background the color of the background
         * @return the image
         */    
+#if NET5_0_OR_GREATER
+        [System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif
         public virtual System.Drawing.Image CreateDrawingImage(System.Drawing.Color foreground, System.Drawing.Color background) {
             if (image == null)
                 return null;

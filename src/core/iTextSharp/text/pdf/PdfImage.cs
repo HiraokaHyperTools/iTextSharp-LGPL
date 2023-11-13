@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Net;
+using System.util;
 using iTextSharp.text;
 /*
  * $Id: PdfImage.cs,v 1.6 2008/05/13 11:25:21 psoares33 Exp $
@@ -170,7 +171,7 @@ namespace iTextSharp.text.pdf {
                 // GIF, JPEG or PNG
                 String errorID;
                 if (image.RawData == null){
-                    isp = WebRequest.Create(image.Url).GetResponse().GetResponseStream();
+                    isp = UrlDownload.DownloadFrom(image.Url);
                     errorID = image.Url.ToString();
                 }
                 else{

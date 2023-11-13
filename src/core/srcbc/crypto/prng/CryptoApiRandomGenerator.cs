@@ -8,6 +8,9 @@ namespace Org.BouncyCastle.Crypto.Prng
 	/// <summary>
 	/// Uses Microsoft's RNGCryptoServiceProvider
 	/// </summary>
+#if NET5_0_OR_GREATER
+	[System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif
 	public class CryptoApiRandomGenerator
 		: IRandomGenerator
 	{

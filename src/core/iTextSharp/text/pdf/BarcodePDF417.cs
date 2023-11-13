@@ -843,6 +843,9 @@ namespace iTextSharp.text.pdf {
             return Image.GetInstance(bitColumns, codeRows, false, Element.CCITTG4, (options & PDF417_INVERT_BITMAP) == 0 ? 0 : Element.CCITT_BLACKIS1, g4, null);
         }
 
+#if NET5_0_OR_GREATER
+        [System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif
         public virtual System.Drawing.Image CreateDrawingImage(System.Drawing.Color foreground, System.Drawing.Color background) {
             PaintCode();
             int h = (int)yHeight;

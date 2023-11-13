@@ -670,6 +670,9 @@ namespace iTextSharp.text.pdf {
             return this.BarcodeSize;
         }    
 
+#if NET5_0_OR_GREATER
+        [System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif
         public override System.Drawing.Image CreateDrawingImage(System.Drawing.Color foreground, System.Drawing.Color background) {
             String bCode;
             if (codeType == CODE128_RAW) {

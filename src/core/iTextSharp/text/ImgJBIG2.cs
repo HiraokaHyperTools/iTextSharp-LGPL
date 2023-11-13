@@ -1,5 +1,6 @@
 using System;
-using System.Security.Cryptography;
+using System.util;
+
 /*
  * $Id: ImgJBIG2.java 3962 2009-06-10 11:43:19Z psoares33 $
  *
@@ -97,7 +98,7 @@ namespace iTextSharp.text {
             if ( globals != null ) {
                 this.global = globals;
                 try {
-                    MD5 md5 = new MD5CryptoServiceProvider();
+                    var md5 = UseCryptography.MD5();
                     md5.Initialize();
                     this.globalHash = md5.ComputeHash(this.global);
                 } catch {

@@ -1038,13 +1038,13 @@ namespace Org.BouncyCastle.Crypto.Tls
 					}
 					throw e;
 				}
-				catch (Exception e)
+				catch (Exception)
 				{
 					if (!this.closed)
 					{
 						this.FailWithError(AL_fatal, AP_internal_error);
 					}
-					throw e;
+					throw;
 				}
 			}
 			len = System.Math.Min(len, applicationDataQueue.Available);
@@ -1101,13 +1101,13 @@ namespace Org.BouncyCastle.Crypto.Tls
 					}
 					throw e;
 				}
-				catch (Exception e)
+				catch (Exception)
 				{
 					if (!closed)
 					{
 						this.FailWithError(AL_fatal, AP_internal_error);
 					}
-					throw e;
+					throw;
 				}
 
 				offset += toWrite;

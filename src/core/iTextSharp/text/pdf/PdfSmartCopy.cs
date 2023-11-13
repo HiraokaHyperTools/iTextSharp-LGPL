@@ -1,8 +1,10 @@
 using System;
 using System.IO;
 using System.Collections;
-using System.Security.Cryptography;
 using iTextSharp.text;
+using System.util;
+using System.Security.Cryptography;
+
 /*
  * $Id: PdfSmartCopy.cs,v 1.7 2008/05/13 11:25:23 psoares33 Exp $
  * 
@@ -132,7 +134,7 @@ namespace iTextSharp.text.pdf {
         internal class ByteStore {
             private byte[] b;
             private int hash;
-            private MD5 md5;
+            private HashAlgorithm md5;
             
             private void SerObject(PdfObject obj, int level, ByteBuffer bb) {
                 if (level <= 0)
@@ -189,7 +191,7 @@ namespace iTextSharp.text.pdf {
             }
             
             internal ByteStore(PRStream str) {
-                md5 = new MD5CryptoServiceProvider();
+                md5 = UseCryptography.MD5();
                 ByteBuffer bb = new ByteBuffer();
                 int level = 100;
                 SerObject(str, level, bb);

@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Security.Cryptography;
 using System.Net;
 using System.Text;
 using System.IO;
@@ -714,7 +713,7 @@ namespace iTextSharp.text.pdf {
                     throw new UnsupportedPdfException("Bad certificate and key.");
                 }            
 
-                SHA1 sh = new SHA1CryptoServiceProvider();
+                var sh = UseCryptography.SHA1();
 
                 sh.TransformBlock(envelopedData, 0, 20, envelopedData, 0);
                 for (int i=0; i<recipients.Size; i++) {
