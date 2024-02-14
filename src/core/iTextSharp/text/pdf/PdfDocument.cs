@@ -846,7 +846,10 @@ namespace iTextSharp.text.pdf {
             page.Put(PdfName.TABS, writer.Tabs);
 
             // we complete the page dictionary
-            
+
+            page.Merge(writer.PageDictEntries);
+            writer.ResetPageDictEntries();
+
             // [C9] if there is XMP data to add: add it
             if (xmpMetadata != null) {
                 PdfStream xmp = new PdfStream(xmpMetadata);

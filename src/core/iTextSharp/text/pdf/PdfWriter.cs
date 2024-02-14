@@ -3091,5 +3091,19 @@ namespace iTextSharp.text.pdf {
                 this.rgbTransparencyBlending = value;
             }
         }
+
+        public virtual PdfDictionary PageDictEntries => pageDictEntries;
+
+        protected PdfDictionary pageDictEntries = new PdfDictionary();
+
+        public virtual void ResetPageDictEntries()
+        {
+            pageDictEntries = new PdfDictionary();
+        }
+
+        public virtual void AddPageDictEntry(PdfName key, PdfObject obj)
+        {
+            pageDictEntries.Put(key, obj);
+        }
     }
 }
