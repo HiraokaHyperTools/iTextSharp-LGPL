@@ -842,5 +842,15 @@ namespace iTextSharp.text.pdf {
                 return buf.ToString();
             }
         }
+
+        public static PdfAnnotation CreatePolygonPolyline(PdfWriter writer, Rectangle rect, string contents, bool polygon, PdfArray vertices)
+        {
+            PdfAnnotation pdfAnnotation = polygon
+                ? writer.CreateAnnotation(rect, PdfName.POLYGON)
+                : writer.CreateAnnotation(rect, PdfName.POLYLINE);
+            pdfAnnotation.Put(PdfName.CONTENTS, new PdfString(contents, "UnicodeBig"));
+            pdfAnnotation.Put(PdfName.VERTICES, new PdfArray(vertices));
+            return pdfAnnotation;
+        }
     }
 }

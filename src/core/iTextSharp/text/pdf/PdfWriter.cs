@@ -3105,5 +3105,15 @@ namespace iTextSharp.text.pdf {
         {
             pageDictEntries.Put(key, obj);
         }
+
+        public virtual PdfAnnotation CreateAnnotation(Rectangle rect, PdfName subtype)
+        {
+            PdfAnnotation pdfAnnotation = new PdfAnnotation(this, rect);
+            if (subtype != null)
+            {
+                pdfAnnotation.Put(PdfName.SUBTYPE, subtype);
+            }
+            return pdfAnnotation;
+        }
     }
 }
