@@ -753,6 +753,7 @@ namespace iTextSharp.text.pdf {
         public static readonly PdfName HOFFSET = new PdfName("HOffset");
         /** A name */
         public static readonly PdfName I = new PdfName("I");
+        public static readonly PdfName IC = new PdfName("IC");
         /** A name */
         public static readonly PdfName ICCBASED = new PdfName("ICCBased");
         /** A name */
@@ -1212,6 +1213,7 @@ namespace iTextSharp.text.pdf {
         public static readonly PdfName RC = new PdfName("RC");
         /** A name */
         public static readonly PdfName RBGROUPS = new PdfName("RBGroups");
+        public static readonly PdfName RD = new PdfName("RD");
         /** A name */
         public static readonly PdfName REASON = new PdfName("Reason");
         /** A name */
