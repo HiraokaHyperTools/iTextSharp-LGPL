@@ -223,7 +223,7 @@ namespace iTextSharp.text.pdf {
         * Translate a PRDictionary to a PdfDictionary. Also translate all of the
         * objects contained in it.
         */
-        protected PdfDictionary CopyDictionary(PdfDictionary inp) {
+        protected virtual PdfDictionary CopyDictionary(PdfDictionary inp) {
             PdfDictionary outp = new PdfDictionary();
             PdfObject type = PdfReader.GetPdfObjectRelease(inp.Get(PdfName.TYPE));
             
@@ -242,7 +242,7 @@ namespace iTextSharp.text.pdf {
         /**
         * Translate a PRStream to a PdfStream. The data part copies itself.
         */
-        protected PdfStream CopyStream(PRStream inp) {
+        protected virtual PdfStream CopyStream(PRStream inp) {
             PRStream outp = new PRStream(inp, null);
             
             foreach (PdfName key in inp.Keys) {
@@ -258,7 +258,7 @@ namespace iTextSharp.text.pdf {
         * Translate a PRArray to a PdfArray. Also translate all of the objects contained
         * in it
         */
-        protected PdfArray CopyArray(PdfArray inp) {
+        protected virtual PdfArray CopyArray(PdfArray inp) {
             PdfArray outp = new PdfArray();
             
             foreach (PdfObject value in inp.ArrayList) {
@@ -270,7 +270,7 @@ namespace iTextSharp.text.pdf {
         /**
         * Translate a PR-object to a Pdf-object
         */
-        protected PdfObject CopyObject(PdfObject inp) {
+        protected virtual PdfObject CopyObject(PdfObject inp) {
             if (inp == null)
                 return PdfNull.PDFNULL;
             switch (inp.Type) {
