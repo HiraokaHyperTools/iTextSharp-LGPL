@@ -67,7 +67,7 @@ namespace iTextSharp.text.pdf {
     * @author Paulo Soares (psoares@consiste.pt)
     * @author Kazuya Ujihara
     */
-    public class PdfReader : IPdfViewerPreferences {
+    public class PdfReader : IPdfViewerPreferences, IDisposable {
         
         static PdfName[] pageInhCandidates = {
             PdfName.MEDIABOX, PdfName.ROTATE, PdfName.RESOURCES, PdfName.CROPBOX
@@ -3458,6 +3458,11 @@ namespace iTextSharp.text.pdf {
         public byte[] ComputeUserPassword() {
     	    if (!encrypted || !ownerPasswordUsed) return null;
     	    return decrypt.ComputeUserPassword(password);
+        }
+
+        public void Dispose()
+        {
+            Close();
         }
     }
 }
