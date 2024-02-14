@@ -12,6 +12,7 @@ using System.util.zlib;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Cms;
 using Org.BouncyCastle.X509;
+using System.Collections.Generic;
 /*
  * $Id: PdfReader.cs,v 1.50 2008/05/13 11:25:23 psoares33 Exp $
  * 
@@ -428,9 +429,9 @@ namespace iTextSharp.text.pdf {
         * of <CODE>String</CODE>.
         * @return content of the document information dictionary
         */
-        public Hashtable Info {
+        public Dictionary<string, string> Info {
             get {
-                Hashtable map = new Hashtable();
+                var map = new Dictionary<string, string>();
                 PdfDictionary info = trailer.GetAsDict(PdfName.INFO);
                 if (info == null)
                     return map;
