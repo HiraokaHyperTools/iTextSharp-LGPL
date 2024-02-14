@@ -255,6 +255,7 @@ namespace iTextSharp.text.pdf {
         public static readonly PdfName C0 = new PdfName("C0");
         /** A name */
         public static readonly PdfName C1 = new PdfName("C1");
+        public static readonly PdfName ca = new PdfName("ca");
         /** A name */
         public static readonly PdfName CA = new PdfName("CA");
         /** A name */
