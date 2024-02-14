@@ -21,6 +21,7 @@ var classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array =
     [ "GetAsStream", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html#af0d202e96d317c666fdee735bf2c8f05", null ],
     [ "GetAsString", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html#acc6603e2e95c4e0ad37ef566e88c33e6", null ],
     [ "GetDirectObject", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html#a2281695ae5922976c2cf62297fd1ec66", null ],
+    [ "GetEnumerator", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html#a70d8a9749992ea9a2cf172018fd0888f", null ],
     [ "GetListIterator", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html#a81db0317d58649bdfaf1dc639f60fe42", null ],
     [ "IsEmpty", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html#a57ed396bcde2850525e7085a86f976d4", null ],
     [ "Remove", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html#ab16fecbaa750aa6eb2f08c709f136dbf", null ],

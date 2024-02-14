@@ -103,7 +103,9 @@ var dir_c76e107d0d6fa53d2d6f137c1546586f =
     [ "FdfWriter.cs", "_fdf_writer_8cs.html", [
       [ "FdfWriter", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_writer.html", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_writer" ]
     ] ],
-    [ "FontDetails.cs", "_font_details_8cs.html", null ],
+    [ "FontDetails.cs", "_font_details_8cs.html", [
+      [ "FontDetails", "classi_text_sharp_1_1text_1_1pdf_1_1_font_details.html", "classi_text_sharp_1_1text_1_1pdf_1_1_font_details" ]
+    ] ],
     [ "FontSelector.cs", "_font_selector_8cs.html", [
       [ "FontSelector", "classi_text_sharp_1_1text_1_1pdf_1_1_font_selector.html", "classi_text_sharp_1_1text_1_1pdf_1_1_font_selector" ]
     ] ],

@@ -278,6 +278,7 @@ var hierarchy =
     [ "iTextSharp.text.html.simpleparser.FactoryProperties", "classi_text_sharp_1_1text_1_1html_1_1simpleparser_1_1_factory_properties.html", null ],
     [ "iTextSharp.text.pdf.FdfWriter", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_writer.html", null ],
     [ "iTextSharp.text.pdf.PRAcroForm.FieldInformation", "classi_text_sharp_1_1text_1_1pdf_1_1_p_r_acro_form_1_1_field_information.html", null ],
+    [ "iTextSharp.text.pdf.FontDetails", "classi_text_sharp_1_1text_1_1pdf_1_1_font_details.html", null ],
     [ "iTextSharp.text.FontFactory", "classi_text_sharp_1_1text_1_1_font_factory.html", null ],
     [ "iTextSharp.text.FontFactoryImp", "classi_text_sharp_1_1text_1_1_font_factory_imp.html", null ],
     [ "iTextSharp.text.pdf.TrueTypeFont.FontHeader", "classi_text_sharp_1_1text_1_1pdf_1_1_true_type_font_1_1_font_header.html", null ],
@@ -292,6 +293,9 @@ var hierarchy =
     [ "Org.BouncyCastle.Crypto.Parameters.Gost3410ValidationParameters", "class_org_1_1_bouncy_castle_1_1_crypto_1_1_parameters_1_1_gost3410_validation_parameters.html", null ],
     [ "iTextSharp.text.pdf.PdfContentByte.GraphicState", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_content_byte_1_1_graphic_state.html", null ],
     [ "iTextSharp.text.factories.GreekAlphabetFactory", "classi_text_sharp_1_1text_1_1factories_1_1_greek_alphabet_factory.html", null ],
+    [ "HashAlgorithm", null, [
+      [ "System.util.DigestWrapped", "class_system_1_1util_1_1_digest_wrapped.html", null ]
+    ] ],
     [ "Hashtable", null, [
       [ "iTextSharp.text.html.HtmlTagMap", "classi_text_sharp_1_1text_1_1html_1_1_html_tag_map.html", null ],
       [ "iTextSharp.text.html.WebColors", "classi_text_sharp_1_1text_1_1html_1_1_web_colors.html", null ],
@@ -860,6 +864,11 @@ var hierarchy =
       [ "Org.BouncyCastle.Crypto.Digests.WhirlpoolDigest", "class_org_1_1_bouncy_castle_1_1_crypto_1_1_digests_1_1_whirlpool_digest.html", null ],
       [ "Org.BouncyCastle.Crypto.Tls.CombinedHash", "class_org_1_1_bouncy_castle_1_1_crypto_1_1_tls_1_1_combined_hash.html", null ]
     ] ],
+    [ "IDisposable", null, [
+      [ "iTextSharp.text.pdf.PdfReader", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.html", [
+        [ "iTextSharp.text.pdf.FdfReader", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_reader.html", null ]
+      ] ]
+    ] ],
     [ "iTextSharp.text.pdf.draw.IDrawInterface", "interfacei_text_sharp_1_1text_1_1pdf_1_1draw_1_1_i_draw_interface.html", [
       [ "iTextSharp.text.pdf.draw.VerticalPositionMark", "classi_text_sharp_1_1text_1_1pdf_1_1draw_1_1_vertical_position_mark.html", [
         [ "iTextSharp.text.pdf.draw.LineSeparator", "classi_text_sharp_1_1text_1_1pdf_1_1draw_1_1_line_separator.html", [
@@ -953,7 +962,16 @@ var hierarchy =
       [ "Org.BouncyCastle.Asn1.Asn1Set", "class_org_1_1_bouncy_castle_1_1_asn1_1_1_asn1_set.html", null ],
       [ "Org.BouncyCastle.Asn1.BerOctetString", "class_org_1_1_bouncy_castle_1_1_asn1_1_1_ber_octet_string.html", null ],
       [ "Org.BouncyCastle.Utilities.Collections.EmptyEnumerable", "class_org_1_1_bouncy_castle_1_1_utilities_1_1_collections_1_1_empty_enumerable.html", null ],
-      [ "Org.BouncyCastle.Utilities.Collections.EnumerableProxy", "class_org_1_1_bouncy_castle_1_1_utilities_1_1_collections_1_1_enumerable_proxy.html", null ]
+      [ "Org.BouncyCastle.Utilities.Collections.EnumerableProxy", "class_org_1_1_bouncy_castle_1_1_utilities_1_1_collections_1_1_enumerable_proxy.html", null ],
+      [ "iTextSharp.text.pdf.PdfArray", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html", [
+        [ "iTextSharp.text.pdf.PdfBorderArray", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_border_array.html", null ],
+        [ "iTextSharp.text.pdf.PdfDashPattern", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dash_pattern.html", null ],
+        [ "iTextSharp.text.pdf.PdfDestination", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_destination.html", null ],
+        [ "iTextSharp.text.pdf.PdfRectangle", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html", null ]
+      ] ]
+    ] ],
+    [ "System.Collections.IEnumerable", null, [
+      [ "iTextSharp.text.pdf.PdfArray", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html", null ]
     ] ],
     [ "IEnumerator", null, [
       [ "Org.BouncyCastle.Utilities.Collections.EmptyEnumerator", "class_org_1_1_bouncy_castle_1_1_utilities_1_1_collections_1_1_empty_enumerator.html", null ],
@@ -1052,9 +1070,7 @@ var hierarchy =
     [ "iTextSharp.text.pdf.interfaces.IPdfViewerPreferences", "interfacei_text_sharp_1_1text_1_1pdf_1_1interfaces_1_1_i_pdf_viewer_preferences.html", [
       [ "iTextSharp.text.pdf.PdfCopyFields", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_copy_fields.html", null ],
       [ "iTextSharp.text.pdf.PdfCopyForms", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_copy_forms.html", null ],
-      [ "iTextSharp.text.pdf.PdfReader", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.html", [
-        [ "iTextSharp.text.pdf.FdfReader", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_reader.html", null ]
-      ] ],
+      [ "iTextSharp.text.pdf.PdfReader", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.html", null ],
       [ "iTextSharp.text.pdf.PdfStamper", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_stamper.html", null ],
       [ "iTextSharp.text.pdf.PdfWriter", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html", null ],
       [ "iTextSharp.text.pdf.intern.PdfViewerPreferencesImp", "classi_text_sharp_1_1text_1_1pdf_1_1intern_1_1_pdf_viewer_preferences_imp.html", null ]
@@ -1325,12 +1341,7 @@ var hierarchy =
     [ "iTextSharp.text.pdf.PdfNameTree", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_name_tree.html", null ],
     [ "iTextSharp.text.pdf.PdfNumberTree", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_number_tree.html", null ],
     [ "iTextSharp.text.pdf.PdfObject", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html", [
-      [ "iTextSharp.text.pdf.PdfArray", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html", [
-        [ "iTextSharp.text.pdf.PdfBorderArray", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_border_array.html", null ],
-        [ "iTextSharp.text.pdf.PdfDashPattern", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dash_pattern.html", null ],
-        [ "iTextSharp.text.pdf.PdfDestination", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_destination.html", null ],
-        [ "iTextSharp.text.pdf.PdfRectangle", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_rectangle.html", null ]
-      ] ],
+      [ "iTextSharp.text.pdf.PdfArray", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_array.html", null ],
       [ "iTextSharp.text.pdf.PdfBoolean", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_boolean.html", null ],
       [ "iTextSharp.text.pdf.PdfDictionary", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dictionary.html", [
         [ "iTextSharp.text.pdf.PRAcroForm", "classi_text_sharp_1_1text_1_1pdf_1_1_p_r_acro_form.html", null ],
@@ -1634,6 +1645,8 @@ var hierarchy =
     [ "Org.BouncyCastle.Tsp.TspAlgorithms", "class_org_1_1_bouncy_castle_1_1_tsp_1_1_tsp_algorithms.html", null ],
     [ "Org.BouncyCastle.Tsp.TspUtil", "class_org_1_1_bouncy_castle_1_1_tsp_1_1_tsp_util.html", null ],
     [ "Org.BouncyCastle.Utilities.Encoders.UrlBase64", "class_org_1_1_bouncy_castle_1_1_utilities_1_1_encoders_1_1_url_base64.html", null ],
+    [ "System.util.UrlDownload", "class_system_1_1util_1_1_url_download.html", null ],
+    [ "System.util.UseCryptography", "class_system_1_1util_1_1_use_cryptography.html", null ],
     [ "Org.BouncyCastle.Bcpg.UserAttributeSubpacket", "class_org_1_1_bouncy_castle_1_1_bcpg_1_1_user_attribute_subpacket.html", [
       [ "Org.BouncyCastle.Bcpg.Attr.ImageAttrib", "class_org_1_1_bouncy_castle_1_1_bcpg_1_1_attr_1_1_image_attrib.html", null ]
     ] ],

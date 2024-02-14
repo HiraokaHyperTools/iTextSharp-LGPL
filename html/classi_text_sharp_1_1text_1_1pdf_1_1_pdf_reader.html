@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HiraokaHyperTools.iTextSharp-LGPL
-   &#160;<span id="projectnumber">0.1.16</span>
+   &#160;<span id="projectnumber">0.2.5</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ Inheritance diagram for iTextSharp.text.pdf.PdfReader:</div>
   <img src="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.png" usemap="#iTextSharp.text.pdf.PdfReader_map" alt=""/>
   <map id="iTextSharp.text.pdf.PdfReader_map" name="iTextSharp.text.pdf.PdfReader_map">
 <area href="interfacei_text_sharp_1_1text_1_1pdf_1_1interfaces_1_1_i_pdf_viewer_preferences.html" alt="iTextSharp.text.pdf.interfaces.IPdfViewerPreferences" shape="rect" coords="0,0,313,24"/>
-<area href="classi_text_sharp_1_1text_1_1pdf_1_1_fdf_reader.html" alt="iTextSharp.text.pdf.FdfReader" shape="rect" coords="0,112,313,136"/>
+<area href="classi_text_sharp_1_1text_1_1pdf_1_1_fdf_reader.html" alt="iTextSharp.text.pdf.FdfReader" shape="rect" coords="161,112,474,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -233,6 +233,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7ef131d0eb795dde5d4c05630f1ca82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70a908e20971245ef7413f3694f0f13d"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.html#a70a908e20971245ef7413f3694f0f13d">ComputeUserPassword</a> ()</td></tr>
 <tr class="separator:a70a908e20971245ef7413f3694f0f13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4e3a3e24caf17c2d6704bf91ea230e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.html#a1c4e3a3e24caf17c2d6704bf91ea230e">Dispose</a> ()</td></tr>
+<tr class="separator:a1c4e3a3e24caf17c2d6704bf91ea230e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -288,8 +290,8 @@ Properties</h2></td></tr>
 <tr class="separator:ad8306f42d94ae44042c2da48442e6b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac16bd68d79243d95af4496799ca961f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_p_r_acro_form.html">PRAcroForm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.html#ac16bd68d79243d95af4496799ca961f8">AcroForm</a><code> [get]</code></td></tr>
 <tr class="separator:ac16bd68d79243d95af4496799ca961f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4767e6cc07c5a4f8af262f1b1d2f16a"><td class="memItemLeft" align="right" valign="top">Hashtable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.html#ad4767e6cc07c5a4f8af262f1b1d2f16a">Info</a><code> [get]</code></td></tr>
-<tr class="separator:ad4767e6cc07c5a4f8af262f1b1d2f16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd165a140b2fcd08f6cd18031a27ce1"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.html#a3bd165a140b2fcd08f6cd18031a27ce1">Info</a><code> [get]</code></td></tr>
+<tr class="separator:a3bd165a140b2fcd08f6cd18031a27ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a899fc5bce2a705cd39aec28b9a5fdb60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.html#a899fc5bce2a705cd39aec28b9a5fdb60">Tampered</a><code> [get, set]</code></td></tr>
 <tr class="separator:a899fc5bce2a705cd39aec28b9a5fdb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8be16fbb2a431efd8705f76f46aa9f85"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_reader.html#a8be16fbb2a431efd8705f76f46aa9f85">Metadata</a><code> [get]</code></td></tr>
@@ -977,6 +979,23 @@ Kazuya Ujihara </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a byte array </dd></dl>
+
+</div>
+</div>
+<a id="a1c4e3a3e24caf17c2d6704bf91ea230e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4e3a3e24caf17c2d6704bf91ea230e">&#9670;&nbsp;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iTextSharp.text.pdf.PdfReader.Dispose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2718,8 +2737,8 @@ Kazuya Ujihara </dd></dl>
 
 </div>
 </div>
-<a id="ad4767e6cc07c5a4f8af262f1b1d2f16a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4767e6cc07c5a4f8af262f1b1d2f16a">&#9670;&nbsp;</a></span>Info</h2>
+<a id="a3bd165a140b2fcd08f6cd18031a27ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bd165a140b2fcd08f6cd18031a27ce1">&#9670;&nbsp;</a></span>Info</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2728,7 +2747,7 @@ Kazuya Ujihara </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Hashtable iTextSharp.text.pdf.PdfReader.Info</td>
+          <td class="memname">Dictionary&lt;string, string&gt; iTextSharp.text.pdf.PdfReader.Info</td>
         </tr>
       </table>
   </td>

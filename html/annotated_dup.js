@@ -144,6 +144,7 @@ var annotated_dup =
           [ "ExtendedColor", "classi_text_sharp_1_1text_1_1pdf_1_1_extended_color.html", "classi_text_sharp_1_1text_1_1pdf_1_1_extended_color" ],
           [ "FdfReader", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_reader.html", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_reader" ],
           [ "FdfWriter", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_writer.html", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_writer" ],
+          [ "FontDetails", "classi_text_sharp_1_1text_1_1pdf_1_1_font_details.html", "classi_text_sharp_1_1text_1_1pdf_1_1_font_details" ],
           [ "FontSelector", "classi_text_sharp_1_1text_1_1pdf_1_1_font_selector.html", "classi_text_sharp_1_1text_1_1pdf_1_1_font_selector" ],
           [ "GlyphList", "classi_text_sharp_1_1text_1_1pdf_1_1_glyph_list.html", null ],
           [ "GrayColor", "classi_text_sharp_1_1text_1_1pdf_1_1_gray_color.html", "classi_text_sharp_1_1text_1_1pdf_1_1_gray_color" ],
@@ -1553,9 +1554,12 @@ var annotated_dup =
           [ "ZInflaterInputStream", "class_system_1_1util_1_1zlib_1_1_z_inflater_input_stream.html", "class_system_1_1util_1_1zlib_1_1_z_inflater_input_stream" ],
           [ "ZStream", "class_system_1_1util_1_1zlib_1_1_z_stream.html", "class_system_1_1util_1_1zlib_1_1_z_stream" ]
         ] ],
+        [ "DigestWrapped", "class_system_1_1util_1_1_digest_wrapped.html", "class_system_1_1util_1_1_digest_wrapped" ],
         [ "ListIterator", "class_system_1_1util_1_1_list_iterator.html", "class_system_1_1util_1_1_list_iterator" ],
         [ "Properties", "class_system_1_1util_1_1_properties.html", "class_system_1_1util_1_1_properties" ],
         [ "StringTokenizer", "class_system_1_1util_1_1_string_tokenizer.html", "class_system_1_1util_1_1_string_tokenizer" ],
+        [ "UrlDownload", "class_system_1_1util_1_1_url_download.html", null ],
+        [ "UseCryptography", "class_system_1_1util_1_1_use_cryptography.html", null ],
         [ "Util", "class_system_1_1util_1_1_util.html", null ]
       ] ]
     ] ]

@@ -37,6 +37,7 @@ var namespacei_text_sharp_1_1text_1_1pdf =
     [ "ExtendedColor", "classi_text_sharp_1_1text_1_1pdf_1_1_extended_color.html", "classi_text_sharp_1_1text_1_1pdf_1_1_extended_color" ],
     [ "FdfReader", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_reader.html", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_reader" ],
     [ "FdfWriter", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_writer.html", "classi_text_sharp_1_1text_1_1pdf_1_1_fdf_writer" ],
+    [ "FontDetails", "classi_text_sharp_1_1text_1_1pdf_1_1_font_details.html", "classi_text_sharp_1_1text_1_1pdf_1_1_font_details" ],
     [ "FontSelector", "classi_text_sharp_1_1text_1_1pdf_1_1_font_selector.html", "classi_text_sharp_1_1text_1_1pdf_1_1_font_selector" ],
     [ "GlyphList", "classi_text_sharp_1_1text_1_1pdf_1_1_glyph_list.html", null ],
     [ "GrayColor", "classi_text_sharp_1_1text_1_1pdf_1_1_gray_color.html", "classi_text_sharp_1_1text_1_1pdf_1_1_gray_color" ],

@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HiraokaHyperTools.iTextSharp-LGPL
-   &#160;<span id="projectnumber">0.1.16</span>
+   &#160;<span id="projectnumber">0.2.5</span>
    </div>
   </td>
  </tr>
@@ -239,6 +239,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9457cbe6f9625d47f4a37df69519202a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7bcbb7aa3f05f24624454b3bc5bfcc0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#ab7bcbb7aa3f05f24624454b3bc5bfcc0">FitsPage</a> (<a class="el" href="classi_text_sharp_1_1text_1_1_table.html">Table</a> table)</td></tr>
 <tr class="separator:ab7bcbb7aa3f05f24624454b3bc5bfcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9825b5265be238a6ea02d7ea616da056"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a9825b5265be238a6ea02d7ea616da056">ResetPageDictEntries</a> ()</td></tr>
+<tr class="separator:a9825b5265be238a6ea02d7ea616da056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c81b88c786d7cc5172c77c4b92aeca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a57c81b88c786d7cc5172c77c4b92aeca">AddPageDictEntry</a> (<a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_name.html">PdfName</a> key, <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html">PdfObject</a> obj)</td></tr>
+<tr class="separator:a57c81b88c786d7cc5172c77c4b92aeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ffae59964921c35f061a641286ea6bd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_annotation.html">PdfAnnotation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a6ffae59964921c35f061a641286ea6bd">CreateAnnotation</a> (<a class="el" href="classi_text_sharp_1_1text_1_1_rectangle.html">Rectangle</a> rect, <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_name.html">PdfName</a> subtype)</td></tr>
+<tr class="separator:a6ffae59964921c35f061a641286ea6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classi_text_sharp_1_1text_1_1_doc_writer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classi_text_sharp_1_1text_1_1_doc_writer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classi_text_sharp_1_1text_1_1_doc_writer.html">iTextSharp.text.DocWriter</a></td></tr>
 <tr class="memitem:a494552f97c239d980de365720ce29f86 inherit pub_methods_classi_text_sharp_1_1text_1_1_doc_writer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1_doc_writer.html#a494552f97c239d980de365720ce29f86">Add</a> (<a class="el" href="interfacei_text_sharp_1_1text_1_1_i_element.html">IElement</a> <a class="el" href="glyphlist_8txt.html#aa94081298ab2dfd0f261cce6c203d9aa">element</a>)</td></tr>
 <tr class="memdesc:a494552f97c239d980de365720ce29f86 inherit pub_methods_classi_text_sharp_1_1text_1_1_doc_writer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals that an <a class="el" href="classi_text_sharp_1_1text_1_1_element.html" title="Interface for a text element.">Element</a> was added to the <a class="el" href="classi_text_sharp_1_1text_1_1_document.html" title="A generic Document class.">Document</a>.  <a href="classi_text_sharp_1_1text_1_1_doc_writer.html#a494552f97c239d980de365720ce29f86">More...</a><br /></td></tr>
@@ -608,6 +614,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a3f4241dc348cb8e9bf2dcaa26296b24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2064e7cdc84d755f44af004598ffa9f"><td class="memItemLeft" align="right" valign="top">Hashtable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#ad2064e7cdc84d755f44af004598ffa9f">JBIG2Globals</a> = new Hashtable()</td></tr>
 <tr class="separator:ad2064e7cdc84d755f44af004598ffa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ad8e124a993d9ddf27f2f5c0e303f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dictionary.html">PdfDictionary</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a19ad8e124a993d9ddf27f2f5c0e303f0">pageDictEntries</a> = new <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dictionary.html">PdfDictionary</a>()</td></tr>
+<tr class="separator:a19ad8e124a993d9ddf27f2f5c0e303f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classi_text_sharp_1_1text_1_1_doc_writer"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classi_text_sharp_1_1text_1_1_doc_writer')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classi_text_sharp_1_1text_1_1_doc_writer.html">iTextSharp.text.DocWriter</a></td></tr>
 <tr class="memitem:a9b97da58fa7268314ee960bdc1ecbee2 inherit pro_attribs_classi_text_sharp_1_1text_1_1_doc_writer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classi_text_sharp_1_1text_1_1_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1_doc_writer.html#a9b97da58fa7268314ee960bdc1ecbee2">pageSize</a></td></tr>
 <tr class="memdesc:a9b97da58fa7268314ee960bdc1ecbee2 inherit pro_attribs_classi_text_sharp_1_1text_1_1_doc_writer"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pageSize.  <a href="classi_text_sharp_1_1text_1_1_doc_writer.html#a9b97da58fa7268314ee960bdc1ecbee2">More...</a><br /></td></tr>
@@ -707,6 +715,8 @@ Properties</h2></td></tr>
 <tr class="separator:a67383a53a0e23006071e9086e4af1e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a608d5daeeba3bee6a098ae9591021035"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a608d5daeeba3bee6a098ae9591021035">RgbTransparencyBlending</a><code> [get, set]</code></td></tr>
 <tr class="separator:a608d5daeeba3bee6a098ae9591021035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe3b6732c35187b365467f6c0a02f63"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dictionary.html">PdfDictionary</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a1fe3b6732c35187b365467f6c0a02f63">PageDictEntries</a><code> [get]</code></td></tr>
+<tr class="separator:a1fe3b6732c35187b365467f6c0a02f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_classi_text_sharp_1_1text_1_1_doc_writer"><td colspan="2" onclick="javascript:toggleInherit('properties_classi_text_sharp_1_1text_1_1_doc_writer')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classi_text_sharp_1_1text_1_1_doc_writer.html">iTextSharp.text.DocWriter</a></td></tr>
 <tr class="memitem:a3540574dc0cb661c0f2b121b10ae83e8 inherit properties_classi_text_sharp_1_1text_1_1_doc_writer"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classi_text_sharp_1_1text_1_1_header_footer.html">HeaderFooter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_text_sharp_1_1text_1_1_doc_writer.html#a3540574dc0cb661c0f2b121b10ae83e8">Header</a><code> [set]</code></td></tr>
 <tr class="memdesc:a3540574dc0cb661c0f2b121b10ae83e8 inherit properties_classi_text_sharp_1_1text_1_1_doc_writer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the header of this document.  <a href="classi_text_sharp_1_1text_1_1_doc_writer.html#a3540574dc0cb661c0f2b121b10ae83e8">More...</a><br /></td></tr>
@@ -1394,6 +1404,42 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a57c81b88c786d7cc5172c77c4b92aeca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c81b88c786d7cc5172c77c4b92aeca">&#9670;&nbsp;</a></span>AddPageDictEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void iTextSharp.text.pdf.PdfWriter.AddPageDictEntry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_name.html">PdfName</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_object.html">PdfObject</a>&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af006cb98ec264033f4ce8e9fca3ef641"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af006cb98ec264033f4ce8e9fca3ef641">&#9670;&nbsp;</a></span>AddSharedObjectsToBody()</h2>
 
@@ -1770,6 +1816,42 @@ Properties</h2></td></tr>
 <p>The pages-tree is built and written to the outputstream. A Catalog is constructed, as well as an Info-object, the referencetable is composed and everything is written to the outputstream embedded in a Trailer. </p>
 
 <p>Reimplemented from <a class="el" href="classi_text_sharp_1_1text_1_1_doc_writer.html#ad56fc7b12de93f766743b3ca00a545f8">iTextSharp.text.DocWriter</a>.</p>
+
+</div>
+</div>
+<a id="a6ffae59964921c35f061a641286ea6bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ffae59964921c35f061a641286ea6bd">&#9670;&nbsp;</a></span>CreateAnnotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_annotation.html">PdfAnnotation</a> iTextSharp.text.pdf.PdfWriter.CreateAnnotation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classi_text_sharp_1_1text_1_1_rectangle.html">Rectangle</a>&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_name.html">PdfName</a>&#160;</td>
+          <td class="paramname"><em>subtype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2337,6 +2419,31 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a9825b5265be238a6ea02d7ea616da056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9825b5265be238a6ea02d7ea616da056">&#9670;&nbsp;</a></span>ResetPageDictEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void iTextSharp.text.pdf.PdfWriter.ResetPageDictEntries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -4641,6 +4748,28 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a19ad8e124a993d9ddf27f2f5c0e303f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ad8e124a993d9ddf27f2f5c0e303f0">&#9670;&nbsp;</a></span>pageDictEntries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dictionary.html">PdfDictionary</a> iTextSharp.text.pdf.PdfWriter.pageDictEntries = new <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dictionary.html">PdfDictionary</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af609da46a6388d978243b9d2be91037c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af609da46a6388d978243b9d2be91037c">&#9670;&nbsp;</a></span>PageLayoutOneColumn</h2>
 
@@ -6357,6 +6486,28 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1fe3b6732c35187b365467f6c0a02f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe3b6732c35187b365467f6c0a02f63">&#9670;&nbsp;</a></span>PageDictEntries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dictionary.html">PdfDictionary</a> iTextSharp.text.pdf.PdfWriter.PageDictEntries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
