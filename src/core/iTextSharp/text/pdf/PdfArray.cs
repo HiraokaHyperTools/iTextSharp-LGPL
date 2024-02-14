@@ -2,6 +2,8 @@ using System;
 using System.IO;
 using System.Collections;
 using System.util;
+using System.Collections.Generic;
+using System.Linq;
 
 /*
  * $Id: PdfArray.cs,v 1.7 2008/05/13 11:25:18 psoares33 Exp $
@@ -67,7 +69,7 @@ namespace iTextSharp.text.pdf {
  * @see        PdfObject
  */
 
-public class PdfArray : PdfObject {
+public class PdfArray : PdfObject, IEnumerable<PdfObject>, System.Collections.IEnumerable {
     
     // membervariables
     
@@ -366,5 +368,15 @@ public class PdfArray : PdfObject {
             refi = (PdfIndirectReference) orig;
         return refi;
     }
-}
+
+        public IEnumerator GetEnumerator()
+        {
+            return ((IEnumerable)arrayList).GetEnumerator();
+        }
+
+        IEnumerator<PdfObject> IEnumerable<PdfObject>.GetEnumerator()
+        {
+            return ((IEnumerable)arrayList).Cast<PdfObject>().GetEnumerator();
+        }
+    }
 }
