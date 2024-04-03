@@ -1078,6 +1078,14 @@ namespace iTextSharp.text.pdf {
             }
         }
 
+        private bool _allowEmptyPdf;
+
+        public bool AllowEmptyPdf
+        {
+            get => _allowEmptyPdf;
+            set => _allowEmptyPdf = value;
+        }
+
     //  Open en Close method + method that create the PDF
 
         /** A number refering to the previous Cross-Reference Table. */
@@ -1122,7 +1130,7 @@ namespace iTextSharp.text.pdf {
                 pdf.Close();
                 AddSharedObjectsToBody();
                 // add the root to the body
-                PdfIndirectReference rootRef = root.WritePageTree();
+                PdfIndirectReference rootRef = root.WritePageTree(_allowEmptyPdf);
                 // make the catalog-object and add it to the body
                 PdfDictionary catalog = GetCatalog(rootRef);
                 // [C9] if there is XMP data to add: add it

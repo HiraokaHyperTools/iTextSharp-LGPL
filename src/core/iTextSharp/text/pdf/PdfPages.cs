@@ -100,9 +100,24 @@ namespace iTextSharp.text.pdf {
         }
         
         // returns the top parent to include in the catalog
-        internal PdfIndirectReference WritePageTree() {
+        internal PdfIndirectReference WritePageTree(bool allowEmptyPdf) {
             if (pages.Count == 0)
-                throw new IOException("The document has no pages.");
+            {
+                if (allowEmptyPdf)
+                {
+                    PdfDictionary top = new PdfDictionary(PdfName.PAGES);
+                    top.Put(PdfName.COUNT, new PdfNumber(0));
+                    PdfArray kids = new PdfArray();
+                    top.Put(PdfName.KIDS, kids);
+                    var topRef = writer.PdfIndirectReference;
+                    writer.AddToBody(top, topRef);
+                    return topRef;
+                }
+                else
+                {
+                    throw new IOException("The document has no pages.");
+                }
+            }
             int leaf = 1;
             ArrayList tParents = parents;
             ArrayList tPages = pages;
