@@ -56,6 +56,36 @@ using iTextSharp.text;
 namespace iTextSharp.text.pdf {
     /**
      * A <CODE>PdfAnnotation</CODE> is a note that is associated with a page.
+     * 
+     * <P>This is a short sample to have an annotation with an appearance.</P>
+     * 
+     * <PRE>
+     * var document = new Document(newSize);
+     * var writer = PdfWriter.GetInstance(document, fs);
+     * document.Open();
+     * 
+     * var annot = new PdfAnnotation(
+     *     writer,
+     *     new Rectangle(...)
+     * );
+     * annot.Put(PdfName.SUBTYPE, PdfName.FREETEXT);
+     * annot.Put(PdfName.F, new PdfNumber(PdfAnnotation.FLAGS_PRINT));
+     * annot.Put(PdfName.CONTENTS, new PdfString("ABC123"));
+     * {
+     *     var N = PdfAppearance.CreateAppearance(writer, 1, 1);
+     *     {
+     *         N.SetMatrix(...);
+     *         N.BoundingBox = new Rectangle(...);
+     *         
+     *         N.ShowText("ABC123");
+     *     }
+     *     annot.SetAppearance(PdfName.N, N);
+     * }
+     * writer.AddAnnotation(annot);
+     * 
+     * document.Close();
+     * writer.Close();
+     * </PRE>
      *
      * @see     PdfDictionary
      */
