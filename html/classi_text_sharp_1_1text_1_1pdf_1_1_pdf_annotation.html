@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HiraokaHyperTools.iTextSharp-LGPL
-   &#160;<span id="projectnumber">0.2.5</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
   </td>
  </tr>
@@ -447,7 +447,34 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <code><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_annotation.html">PdfAnnotation</a></code> is a note that is associated with a page.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dictionary.html">PdfDictionary</a> </dd></dl>
+<p>This is a short sample to have an annotation with an appearance.</p>
+<pre>
+var document = new Document(newSize);
+var writer = PdfWriter.GetInstance(document, fs);
+document.Open();
+
+var annot = new <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_annotation.html">PdfAnnotation</a>(
+    writer,
+    new Rectangle(...)
+);
+annot.Put(<a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_name.html#a0d9e920d2e289ba20917420e9b569f56">PdfName.SUBTYPE</a>, <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_name.html#a40fab3db209c2cf79081eaddf799334c">PdfName.FREETEXT</a>);
+annot.Put(<a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_name.html#adac5c62bc321211f6c172c969bcf1ff6">PdfName.F</a>, new <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_number.html">PdfNumber</a>(<a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_annotation.html#a0795992cd02713386909b9097330775f">PdfAnnotation.FLAGS_PRINT</a>));
+annot.Put(<a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_name.html#a1b54e3f004e7ec7b3df71866a28ecde0">PdfName.CONTENTS</a>, new <a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_string.html">PdfString</a>("ABC123"));
+{
+    var N = PdfAppearance.CreateAppearance(writer, 1, 1);
+    {
+        N.SetMatrix(...);
+        N.BoundingBox = new Rectangle(...);
+
+        N.ShowText("ABC123");
+    }
+    annot.SetAppearance(<a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_name.html#a02d5b7b0caaa902a1f65dfa911106e00">PdfName.N</a>, N);
+}
+writer.AddAnnotation(annot);
+
+document.Close();
+writer.Close();
+</pre><dl class="section see"><dt>See also</dt><dd><a class="el" href="classi_text_sharp_1_1text_1_1pdf_1_1_pdf_dictionary.html">PdfDictionary</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abe44b043a0a368dd539028805a9989e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe44b043a0a368dd539028805a9989e4">&#9670;&nbsp;</a></span>PdfAnnotation() <span class="overload">[1/3]</span></h2>

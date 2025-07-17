@@ -112,6 +112,7 @@ var classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer =
     [ "vOCProperties", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a714d59d369b6b9a296d6c9c141d6f26e", null ],
     [ "xmpMetadata", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#aeb9ae4df7db5bfdb09c13c0520e650c4", null ],
     [ "AcroForm", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#aee9144517c250a74261418f681adbcea", null ],
+    [ "AllowEmptyPdf", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a0d240c8cebc09918df39a3d2b63caa49", null ],
     [ "Collection", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a7342310fed371faeb025581d55efc117", null ],
     [ "CompressionLevel", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a33f5d508f84fe95275f1300b16098322", null ],
     [ "CropBoxSize", "classi_text_sharp_1_1text_1_1pdf_1_1_pdf_writer.html#a7132a88d67cbad674868f2aed91b029f", null ],

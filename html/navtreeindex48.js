@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"classi_text_sharp_1_1text_1_1rtf_1_1parser_1_1_pushback_stream.html#ae7478131431e99436603d53c0c23525b":[3,0,0,0,4,6,5,8],
 "classi_text_sharp_1_1text_1_1rtf_1_1parser_1_1_pushback_stream.html#aeacb9a5eb3e7808d19ddf5bed9a33a10":[3,0,0,0,4,6,5,5],
 "classi_text_sharp_1_1text_1_1rtf_1_1parser_1_1_rtf_import_mappings.html":[3,0,0,0,4,6,6],
 "classi_text_sharp_1_1text_1_1rtf_1_1parser_1_1_rtf_import_mappings.html#a2c7b55bf76abcffe4b98adcba38d5533":[3,0,0,0,4,6,6,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "classi_text_sharp_1_1text_1_1rtf_1_1parser_1_1destinations_1_1_rtf_destination_stylesheet_table.html#a33a753a48c80a92a715b6b58e1c677cb":[3,0,0,0,4,6,1,10,27],
 "classi_text_sharp_1_1text_1_1rtf_1_1parser_1_1destinations_1_1_rtf_destination_stylesheet_table.html#a33f6ecc6527a5310226ba96cb68df4a2":[3,0,0,0,4,6,1,10,22],
 "classi_text_sharp_1_1text_1_1rtf_1_1parser_1_1destinations_1_1_rtf_destination_stylesheet_table.html#a38ca25b6d5ad21d2f8edf424d4ea781a":[3,0,0,0,4,6,1,10,39],
-"classi_text_sharp_1_1text_1_1rtf_1_1parser_1_1destinations_1_1_rtf_destination_stylesheet_table.html#a3dd0f5ba8c1638e97a0bae6e2d590822":[3,0,0,0,4,6,1,10,6],
-"classi_text_sharp_1_1text_1_1rtf_1_1parser_1_1destinations_1_1_rtf_destination_stylesheet_table.html#a3ebaab3b4f0f122fc897706ccd685754":[3,0,0,0,4,6,1,10,43]
+"classi_text_sharp_1_1text_1_1rtf_1_1parser_1_1destinations_1_1_rtf_destination_stylesheet_table.html#a3dd0f5ba8c1638e97a0bae6e2d590822":[3,0,0,0,4,6,1,10,6]
 };
